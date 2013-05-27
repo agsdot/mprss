@@ -3,8 +3,14 @@
 <html lang="en">
   <head>
     <title>impress.js</title>
-        <link href="css/stylesabc.css" rel="stylesheet" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Quicksand|Headland+One' rel='stylesheet' type='text/css'>
+
+        <!-- <link href="css/jlaicss.css" rel="stylesheet" type="text/css" /> -->
+
+        <link href="css/stylesabc.css" rel="stylesheet" />
 
   </head>
 
@@ -41,19 +47,44 @@
         Your browser doesn't support impress.js.  Try Chrome, Safari, or Firefox.
     </div>
 
+
+
+<!--
+
     <div class="step" data-x="0" data-y="0" data-z="0" data-scale="1">
         This is my first slide, JLai<br>
         About me:<br>
-        <ul>   
+        <ul>
         <li>SF Bay local</li>
         <li>School in Davis, volunteer education work in Oakland, Sac and LA, and IT tech support work in LA.</li>
         </ul>
+    </div> -->
+
+    <div  class="step">
+
+ <!--    <div id="contact" class="step"> -->
+      <h1>informaci&ograve;n de contacto</h1>
+      <ul class="alignleft">
+
+        <li data-impress="fade">email: <a href="mailto:jonathanlai AT eltux DOT net">jonathanlai AT eltux DOT net</a>
+        </li>
+        <li data-impress="drive-right after 500ms">twitter: <a href="https://twitter.com/#!/jonlai" target="_blank">@jonlai</a>
+        </li>
+        <li data-impress="drive-up after 500ms">phone: first initiate an email and send me your phone #...
+        </li>
+
+      </ul>
+      <a href="#" id="reinit-jmpress" style="display:none">Switch back to presentation view :)</a>
+      <p data-jmpress="fade-slow after 500ms">I look forward to getting in contact</p>
+
     </div>
+
+
 
     <div class="step" data-x="500" data-y="0" data-z="0" data-rotate-y="55">
         This is slide 2
 
-        About me:   
+        About me:
         GA WDI graduate
 
     </div>
@@ -61,7 +92,7 @@
     <div class="step" data-x="500" data-y="-400"  data-z="0" data-rotate-x="45">
       Slide 3
 
-      About me:   
+      About me:
       Linux and FOSS enthusiast. Can run the three platforms, and recover data in case of a crash....
 
     </div>
@@ -75,7 +106,7 @@
         2ndo This is my first slide
 
         Project: <br>
-        <ul>
+        <ul class="alignleft">
           <li>location finder for GA locations, 4 in US, and several international</li>
         </ul>
 
@@ -85,7 +116,7 @@
         2ndo This is slide 2
 
         Project: <br>
-        <ul>
+        <ul class="alignleft">
           <li>quote8 me project, bookmarking service</li>
         </ul>
 
@@ -173,9 +204,9 @@
 
 
 
-
   <script src="js/impress.js"></script>
   <script>impress().init();</script>
+
 
   </body>
 </html>
