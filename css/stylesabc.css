@@ -1,0 +1,33 @@
+
+.no-support-message { 
+	display:none;
+}
+
+.impress-not-supported .no-support-message { 
+	display:block; 
+}
+
+body {
+	/*background:#EBEBEB;*/
+	font:16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color:#333; 
+    background: url("../images/light_wool.png");
+
+}
+
+
+/*body{*/
+    /*width:1024px;*/
+    /*font-size: 36px;*/
+    /*font-family: 'Armata', sans-serif;*/
+    /*background: url("images/pt-2.png");*/
+    /*color: #eee;*/
+    /*text-shadow: 1px 1px 2px #000;*/
+/*}*/
+
+
+.step { 
+	width:940px; 
+	margin:0 auto 24px auto; 
+	text-align:center; 
+}
