@@ -43,3 +43,8 @@ body {
 .alignleft {
   text-align: left;
 }
+
+#social {position:absolute;top:10px;right:10px;}
+#social .social-button-wrapper {display:inline-block;margin-left:10px}
+
+
