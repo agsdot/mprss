@@ -28,7 +28,16 @@ body {
 	width:940px;
 	margin:0 auto 24px auto;
 	text-align:center;
+  opacity:0.1;
+  transition:         opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition:    opacity 1s;
+  -ms-transition:     opacity 1s;
+  -o-transition:      opacity 1s;
+}
 
+.step.active {
+    opacity: 1;
 }
 
 .alignleft {
