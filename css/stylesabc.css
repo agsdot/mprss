@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 
-.no-support-message {
+/*.no-support-message {
 	display:none;
 }
 
 .impress-not-supported .no-support-message {
 	display:block;
 }
-
+*/
 body {
 	/*font:16px/24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
 	color:#333;
@@ -48,3 +48,7 @@ body {
 #social .social-button-wrapper {display:inline-block;margin-left:10px}
 
 
+
+#fallback-message {display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
+#fallback-message a {font-weight:bold}
+.impress-not-supported #fallback-message {display:block}
