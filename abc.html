@@ -486,36 +486,52 @@
     $(function () {
       var interval
       $(document).keydown(function() {
-          // var interval;
           if(event.keyCode==74){
-            var interval = setInterval(function(){ api.next();},5000);
+
+
+            interval = setInterval(function(){ api.next();},5000);
+            // a = interval;
+            // return a;
           }
-      });
+      // });
           // if $(document).keydown(function() {
-      $(document).keydown(function() {
+      // $(document).keydown(function() {
           // var interval;
-          if(event.keyCode==13){
-            clearInterval(interval);
+          // if(event.keyCode==13){
+          //   clearInterval(interval);
+          // }
+
+          if(event.keyCode==75){
+            alert('hi');
+            // clearInterval(interval);
+            bbb = function(){
+              alert('sooo....');
+            };
+            bbb();
+            a = clearInterval(interval);
+            a();
+            alert('bye');
+
           }
       });
 
       });
 
     // $(function () {
-    //   var interval
+    //   // var interval;
     //   $(document).keydown(function() {
-    //       // var interval;
+    //       var interval;
     //       if(event.keyCode==74){
     //         var interval = setInterval(function(){ api.next();},5000);
     //       }
-    //   });
+    //   // });
     //       // if $(document).keydown(function() {
     //   $(document).keydown(function() {
     //       // var interval;
-    //       if(event.keyCode==13){
-    //         var interval = setInterval(function(){ api.next();},50000);
+    //       if(event.keyCode==75){
+    //         // var interval = setInterval(function(){ api.next();},50000);
 
-    //         // clearInterval(interval);
+    //         clearInterval(interval);
     //       }
     //   });
 
