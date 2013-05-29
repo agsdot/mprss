@@ -11,6 +11,9 @@
         <!-- <link href="css/jlaicss.css" rel="stylesheet" type="text/css" /> -->
 
         <link href="css/stylesabc.css" rel="stylesheet" />
+<!--         <link rel="icon" type="image/ico" href="http://www.mysite.com/favicon.ico"/> -->
+        <link rel="icon" type="image/ico" href="/images/favicon.ico"/>
+        <!-- <link rel="icon" href="/favicon.ico" /> -->
 
   </head>
 
@@ -458,7 +461,72 @@
 
 
   <script src="js/impress.js"></script>
-  <script>impress().init();</script>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script>     
+    var api = impress();     
+    api.init();     
+    $(document).ready(function(){   
+
+    // var interval
+
+    // $(document).keydown(function() {
+    // if(event.keyCode==74){
+    //   var interval = setInterval(function(){ api.next();},5000);
+    // }
+    // });
+
+    // $(document).keydown(function() {
+    // if(event.keyCode==75){
+    //   var interval = setInterval(function(){ api.next();},5000);
+    // }
+    // });
+
+
+    $(function () {
+      var interval
+      $(document).keydown(function() {
+          // var interval;
+          if(event.keyCode==74){
+            var interval = setInterval(function(){ api.next();},5000);
+          }
+      });
+          // if $(document).keydown(function() {
+      $(document).keydown(function() {
+          // var interval;
+          if(event.keyCode==13){
+            clearInterval(interval);
+          }
+      });
+
+      });
+
+    // $(function () {
+    //   var interval
+    //   $(document).keydown(function() {
+    //       // var interval;
+    //       if(event.keyCode==74){
+    //         var interval = setInterval(function(){ api.next();},5000);
+    //       }
+    //   });
+    //       // if $(document).keydown(function() {
+    //   $(document).keydown(function() {
+    //       // var interval;
+    //       if(event.keyCode==13){
+    //         var interval = setInterval(function(){ api.next();},50000);
+
+    //         // clearInterval(interval);
+    //       }
+    //   });
+
+    //   });
+
+
+          
+      // var interval = setInterval(function(){ api.next();},5000);
+    });
+  </script>
+
 
 <div style="position: fixed; top: 10px; right: 10px; pointer-events: auto;">
     <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
