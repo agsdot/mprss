@@ -33,3 +33,10 @@
 
         </div>
         <script src="lib/impress.js">
+
+
+<script>     
+var api = impress();     
+api.init();     
+$(document).ready(function(){         
+var interval = setInterval(function(){             api.next();         },5000);     }); </script>
