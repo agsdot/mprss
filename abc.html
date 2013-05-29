@@ -38,11 +38,9 @@
   <li><a href="#/step-7"><span>Step 7</span></a></li>
 </ul>
 
-<a id="global-prev" href="#" class="prev" style="display:none">&lt;</a>
-<a id="global-next" href="#" class="next" style="display:none">&gt;</a>
 
-
-<div id="hint"><p>Use spacebar, arrow keys or page up / down to navigate</p></div><script>if ('ontouchstart' in document.documentElement) {
+<div id="hint"><p>Use spacebar, arrow keys or page up / down to navigate</p></div>
+<script>if ('ontouchstart' in document.documentElement) {
   document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
 }
 </script>
@@ -455,6 +453,11 @@
 
 </div>
 
+
+  <a id="arrowLeft" class="arrow">&lt;</a>
+  <a id="arrowRight" class="arrow">&gt;</a>
+
+
   <!-- JavaScript includes -->
 
   <script src="js/impress.js"></script>
@@ -462,7 +465,18 @@
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script>     
     var api = impress();     
-    api.init();     
+    api.init();  
+
+        $('#arrowLeft').click(function(e){
+          e.preventDefault();
+          api.prev();
+        });
+
+    $('#arrowRight').click(function(e){
+          e.preventDefault();
+          api.next();
+        });
+               
     $(document).ready(function(){   
 
     $(function () {

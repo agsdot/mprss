@@ -58,3 +58,35 @@ body {
 /*rgb(60,241,161) added to the above */
 .impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(241,161,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}
 .impress-on-title #hint{opacity:1;bottom:0;-webkit-transition:opacity .5s 1.5s,bottom .5s 1.5s;-moz-transition:opacity .5s 1.5s,bottom .5s 1.5s;-ms-transition:opacity .5s 1.5s,bottom .5s 1.5s;-o-transition:opacity .5s 1.5s,bottom .5s 1.5s;transition:opacity .5s 1.5s,bottom .5s 1.5s}
+
+.arrow{
+  width:32px;
+  height:54px;
+  background:url('../images/arrows.png') no-repeat;
+  position:fixed;
+  top:50%;
+  margin-top:-27px;
+  cursor:pointer;
+  text-indent:-9999px;
+  overflow:hidden;
+  opacity:0.8;
+  border:none !important;
+  text-decoration:none !important;
+
+  -moz-transition:0.2s opacity;
+  -webkit-transition:0.2s opacity;
+  transition:0.2s opacity;
+}
+
+.arrow:hover{
+  opacity:1;
+}
+
+#arrowLeft{
+  left:45px;
+}
+
+#arrowRight{
+  right:45px;
+  background-position:top right;
+}
