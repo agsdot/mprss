@@ -52,3 +52,9 @@ body {
 #fallback-message {display:none;width:800px;margin:150px auto;font-size:20px;line-height:200%;text-align:center;}
 #fallback-message a {font-weight:bold}
 .impress-not-supported #fallback-message {display:block}
+
+#hint{display:none}
+/*.impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(233,70,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}*/
+/*rgb(60,241,161) added to the above */
+.impress-enabled #hint{display:block;position:fixed;left:0;right:0;bottom:-100px;background:rgba(241,161,60,0.75);color:#eee;text-align:center;font-size:1.5em;padding:.5em 0;opacity:0;-webkit-transition:opacity .5s,bottom .5s;-moz-transition:opacity .5s,bottom .5s;-ms-transition:opacity .5s,bottom .5s;-o-transition:opacity .5s,bottom .5s;transition:opacity .5s,bottom .5s}
+.impress-on-title #hint{opacity:1;bottom:0;-webkit-transition:opacity .5s 1.5s,bottom .5s 1.5s;-moz-transition:opacity .5s 1.5s,bottom .5s 1.5s;-ms-transition:opacity .5s 1.5s,bottom .5s 1.5s;-o-transition:opacity .5s 1.5s,bottom .5s 1.5s;transition:opacity .5s 1.5s,bottom .5s 1.5s}
