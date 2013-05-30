@@ -41,15 +41,15 @@
 -->
 </ul>
 
-
-<div id="hint"><p>Use spacebar, arrow keys or page up / down to navigate</p></div>
-<script>if ('ontouchstart' in document.documentElement) {
-  document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
-}
-
-
-</script>
-
+<!--
+    <div id="hint">
+      <p>Use spacebar, arrow keys or page up / down to navigate</p>
+    </div>
+    <script>if ('ontouchstart' in document.documentElement) {
+      document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+    }
+    </script>
+-->
 
     <div id="fallback-message">
     <!-- <div class="no-support-message"> -->
@@ -460,6 +460,15 @@
   <a id="arrowLeft" class="arrow">&lt;</a>
   <a id="arrowRight" class="arrow">&gt;</a>
 
+
+  <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  <script>
+  if ("ontouchstart" in document.documentElement) { 
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+  </script>
 
   <!-- JavaScript includes -->
 
