@@ -113,6 +113,15 @@ body {
 #nav p a:active {color:#F23005;}  /* selected link */
 
 
+/*FF8900 color for contact links*/
+
+.contact a:link {color:#F23005; text-decoration: none;font-weight:bold;} /* unvisited link */
+.contact a:visited {color:#F23005;}  /* visited link */
+.contact a:hover {color:#F23005;}  /* mouse over link */
+.contact a:active {color:#F23005;}  /* selected link */
+
+
+
 .hint {
     /*
         We hide the hint until presentation is started and from browsers not supporting
@@ -120,7 +129,7 @@ body {
     */
     font-size: 150%;
     display: none;
-    
+
     /*
         ... and give it some fixed position and nice styles.
     */
@@ -128,21 +137,21 @@ body {
     left: 0;
     right: 0;
     bottom: 2px;
-    
+
     background: rgba(255,137,0,0.5);
     color: #EEE;
     text-align: center;
-    
+
     font-size: 50px;
     padding: 20px;
-    
+
     z-index: 100;
-    
+
     /*
         By default we don't want the hint to be visible, so we make it transparent ...
     */
     opacity: 0;
-    
+
     /*
         ... and position it below the bottom of the screen (relative to it's fixed position)
     */
@@ -155,11 +164,11 @@ body {
     /*
         Now let's imagine that the hint is visible and we want to fade it out and move out
         of the screen.
-        
+
         So we define the transition on the opacity property with 1s duration and another
         transition on transform property delayed by 1s so it will happen after the fade out
         on opacity finished.
-        
+
         This way user will not see the hint moving down.
     */
     -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
@@ -186,19 +195,19 @@ body {
     */
     font-size: 150%;
     opacity: 1;
-    
+
     -webkit-transform: translateY(0px);
     -moz-transform:    translateY(0px);
     -ms-transform:     translateY(0px);
     -o-transform:      translateY(0px);
     transform:         translateY(0px);
-    
+
     /*
         Now for fade in transition we have the oposite situation from the one
         above.
-        
+
         First after 4.5s delay we animate the transform property to move the hint
-        into its correct position and after that we fade it in with opacity 
+        into its correct position and after that we fade it in with opacity
         transition.
     */
     -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
