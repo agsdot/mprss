@@ -92,3 +92,19 @@ body {
   right:45px;
   background-position:top right;
 }
+
+/*
+#nav p a:link {
+  color: red;
+}*/
+#nav {
+  position:relative;
+  left:17px;
+  top: 30px;
+}
+
+#nav p a:link {color:red; text-decoration: none;font-weight:bold;} /* unvisited link */
+#nav p a:visited {color:red;}  /* visited link */
+#nav p a:hover {color:red;}  /* mouse over link */
+#nav p a:active {color:red;}  /* selected link */
+

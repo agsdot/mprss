@@ -26,11 +26,12 @@
 <body class="impress-not-supported">
 
 <ul id="nav">
-  <li><a href="#/about"><span>About</span></a></li>
-  <li><a href="#/projects"><span>Project</span></a></li>
-  <li><a href="#/stack"><span>The Stack</span></a></li>
-  <li><a href="#/contact"><span>Contact</span></a></li>
-  <li><a href="#/future"><span>Future</span></a></li>
+
+  <p><a href="#/about"><span>About</span></a></p>
+  <p><a href="#/projects"><span>Project</span></a></p>
+  <p><a href="#/stack"><span>The Stack</span></a></p>
+  <p><a href="#/contact"><span>Contact</span></a></p>
+  <p><a href="#/future"><span>Future</span></a></p>
 <!--
   <p>
   <li><a href="#/step-4"><span>Gap</span></a></li>
@@ -45,6 +46,8 @@
 <script>if ('ontouchstart' in document.documentElement) {
   document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
 }
+
+
 </script>
 
 
@@ -487,41 +490,42 @@
     //   }
     // );
 
-    $(document).ready(function() {
-        $("#nav").hover(function() {
-            $(this).children("li").fadeTo(200, 1).end()
-                .children(".hover").show();
-        }, function() {
-            $(this).children("li").fadeTo(200, .05).end()
-                .children(".hover").hide();
-        });
-    });
+
 
                  
     $(document).ready(function(){   
 
-    $(function () {
-      var interval
-      $(document).keydown(function() {
-          if(event.keyCode==74){
-
-            interval = setInterval(function(){ api.next();},5000);
-          }
-          if(event.keyCode==75){
-            // alert('hi');
-            // clearInterval(interval);
-            // bbb = function(){
-              // alert('sooo....');
-            // };
-            // bbb();
-            a = clearInterval(interval);
-            // a();
-            // alert('bye');
-
-          }
+      $("#nav").hover(function() {
+          $(this).children("p").fadeTo(200, 1).end()
+              .children(".hover").show();
+      }, function() {
+          $(this).children("p").fadeTo(200, .05).end()
+              .children(".hover").hide();
       });
 
-      });
+
+      $(function () {
+        var interval
+        $(document).keydown(function() {
+            if(event.keyCode==74){
+
+              interval = setInterval(function(){ api.next();},5000);
+            }
+            if(event.keyCode==75){
+              // alert('hi');
+              // clearInterval(interval);
+              // bbb = function(){
+                // alert('sooo....');
+              // };
+              // bbb();
+              a = clearInterval(interval);
+              // a();
+              // alert('bye');
+
+            }
+        });
+
+        });
 
     });
   </script>
