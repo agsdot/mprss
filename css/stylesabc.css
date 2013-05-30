@@ -78,6 +78,8 @@ body {
   transition:0.2s opacity;
 }
 
+
+/*ARROW STYLING*/
 .arrow:hover{
   opacity:1;
 }

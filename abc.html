@@ -10,6 +10,10 @@
 
         <!-- <link href="css/jlaicss.css" rel="stylesheet" type="text/css" /> -->
 
+<!--         <link id="theme" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-darkness/jquery-ui.css" rel="stylesheet" /> -->
+<!--         <link href="src/css/style.css" rel="stylesheet" type="text/css" /> -->
+        <!-- <link href="http://jlai.org/dist/basic-animations.css" rel="stylesheet" type="text/css" /> -->
+
         <link href="css/stylesabc.css" rel="stylesheet" />
 <!--         <link rel="icon" type="image/ico" href="http://www.mysite.com/favicon.ico"/> -->
         <link rel="icon" type="image/ico" href="/images/favicon.ico"/>
@@ -22,17 +26,18 @@
 <body class="impress-not-supported">
 
 <ul id="nav">
-  <li><a href="#/step-1"><span>About</span></a></li>
-  <li><a href="#/step-2"><span>Project</span></a></li>
-  <li><a href="#/step-3"><span>The Stack</span></a></li>
-  <li><a href="#/step-4"><span>Contact</span></a></li>
-  <li><a href="#/step-4"><span>Future</span></a></li>
+  <li><a href="#/about"><span>About</span></a></li>
+  <li><a href="#/projects"><span>Project</span></a></li>
+  <li><a href="#/stack"><span>The Stack</span></a></li>
+  <li><a href="#/contact"><span>Contact</span></a></li>
+  <li><a href="#/future"><span>Future</span></a></li>
+<!--
   <p>
   <li><a href="#/step-4"><span>Gap</span></a></li>
   <li><a href="#/step-1"><span>Step 1</span></a></li>
   <li><a href="#/step-2"><span>Step 2</span></a></li>
   <li><a href="#/step-3"><span>Step 3</span></a></li>
-
+-->
 </ul>
 
 
@@ -179,7 +184,7 @@
 
 
 <!--  About me  0 , 0 , 0 coordinates -->
-    <div  class="step"  id="title">
+    <div id="about" class="step"  id="title">
       <h1>Who is JLai?</h1>
       <ul class="alignleft">
         <li>SF Bay local</li>
@@ -208,7 +213,7 @@
 
 <!--  Projects  -1000 , -1732 , 0 multiplied by original coordinates dispositions -->
 
-    <div  class="step" data-x="-1700" data-y="-1732" data-z="500" data-rotate-y="-45">
+    <div  id="projects" class="step" data-x="-1700" data-y="-1732" data-z="500" data-rotate-y="-45">
       <h2>Several Projects</h2>
         Individual & Team
     </div>
@@ -250,7 +255,7 @@
 <!--  Projects  -2732 , -732 , 0 multiplied by original coordinates dispositions -->
 
 
-    <div  class="step" data-x="-2732" data-y="-732"data-rotate-y="45">
+    <div id="stack" class="step" data-x="-2732" data-y="-732"data-rotate-y="45">
       <h1>Technologies stacks used</h1>
     </div>
 
@@ -281,7 +286,7 @@
 <!--  Contact  1000 , -1000 , 0 multiplied by original coordinates dispositions -->
 
 
-    <div  class="step" data-x="2200" data-y="-2600" data-rotate-x="120">
+    <div id="contact" class="step" data-x="2200" data-y="-2600" data-rotate-x="120">
       <h1>Contact Me!</h1>
     </div>
 
@@ -310,7 +315,7 @@
 <!--  Future  500, -1732, 3464         0 multiplied by original coordinates dispositions -->
 
 
-    <div class="step" data-x="500" data-y="-1732" data-z="3464" data-scale="1">
+    <div id="future" class="step" data-x="500" data-y="-1732" data-z="3464" data-scale="1">
       <h1>The Future?</h1>
     </div>
 
@@ -435,7 +440,9 @@
 
 <div style="position: fixed; top: 10px; right: 10px; pointer-events: auto;">
     <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
-
+<!--
+    <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+-->
     <iframe src="http://ghbtns.com/github-btn.html?user=agsdot&repo=mprss&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
 
     <a href="http://twitter.com/share" class="twitter-share-button" data-text="JLai.org @jonlai" data-url="http://www.jlai.org"></a>
@@ -468,7 +475,29 @@
           e.preventDefault();
           api.next();
         });
-               
+
+    // #nav li
+                 
+    // $('#nav').hover(
+      // function () {
+      //   $(this).show();
+      // },
+    //   function () {
+    //     $(this).hide();
+    //   }
+    // );
+
+    $(document).ready(function() {
+        $("#nav").hover(function() {
+            $(this).children("li").fadeTo(200, 1).end()
+                .children(".hover").show();
+        }, function() {
+            $(this).children("li").fadeTo(200, .05).end()
+                .children(".hover").hide();
+        });
+    });
+
+                 
     $(document).ready(function(){   
 
     $(function () {
