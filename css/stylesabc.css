@@ -125,6 +125,10 @@ body {
 .about a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
 .about a:active {color:rgba(255,137,0,0.93);}  /* selected link */
 
+.project a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.project a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.project a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.project a:active {color:rgba(255,137,0,0.93);}  /* selected link */
 
 /*rgba(255,137,0,0.5);
 */
@@ -222,4 +226,10 @@ body {
     -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
     -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+.maccomputer img {border:1px solid;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
 }
