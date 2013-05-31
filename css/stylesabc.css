@@ -107,20 +107,27 @@ body {
   top: 30px;
 }
 
-#nav p a:link {color:#F23005; text-decoration: none;font-weight:bold;} /* unvisited link */
-#nav p a:visited {color:#F23005;}  /* visited link */
-#nav p a:hover {color:#F23005;}  /* mouse over link */
-#nav p a:active {color:#F23005;}  /* selected link */
+#nav p a:link {color:rgba(255,137,0,0.85); text-decoration: none;font-weight:bold;} /* unvisited link */
+#nav p a:visited {color:rgba(255,137,0,0.85);}  /* visited link */
+#nav p a:hover {color:rgba(255,137,0,0.85);}  /* mouse over link */
+#nav p a:active {color:rgba(255,137,0,0.85);}  /* selected link */
 
 
 /*FF8900 color for contact links*/
 
-.contact a:link {color:#F23005; text-decoration: none;font-weight:bold;} /* unvisited link */
-.contact a:visited {color:#F23005;}  /* visited link */
-.contact a:hover {color:#F23005;}  /* mouse over link */
-.contact a:active {color:#F23005;}  /* selected link */
+.contact a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.contact a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.contact a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.contact a:active {color:rgba(255,137,0,0.93);}  /* selected link */
+
+.about a:link {color:rgba(255,137,0,0.93); text-decoration: none;font-weight:bold;} /* unvisited link */
+.about a:visited {color:rgba(255,137,0,0.93);}  /* visited link */
+.about a:hover {color:rgba(255,137,0,0.93);}  /* mouse over link */
+.about a:active {color:rgba(255,137,0,0.93);}  /* selected link */
 
 
+/*rgba(255,137,0,0.5);
+*/
 
 .hint {
     /*
