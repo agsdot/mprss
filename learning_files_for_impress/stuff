@@ -1,0 +1,44 @@
+try zepto instead of jquery
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Quicksand|Headland+One' rel='stylesheet' type='text/css'>
+
+        <!-- demo style and animations -->
+        <link href="http://jmpressjs.github.io/jmpress.js/dist/demo.css" rel="stylesheet" type="text/css" />
+
+        <!-- jQuery and jmpress.js -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://jmpressjs.github.io/jmpress.js/dist/jmpress.all.min.js"></script>
+
+        <link id="theme" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/ui-darkness/jquery-ui.css" rel="stylesheet" />
+        <link href="css/stylesabc.css" rel="stylesheet" />
+
+        <link href="css/stylesabc.css" rel="stylesheet" />
+
+
+
+
+
+
+        <div id="social">
+
+        <div class="social-button-wrapper">
+                <div data-size="medium" data-annotation="none" class="g-plusone">
+                </div>
+        </div>
+        <div class="social-button-wrapper">
+                <a href="https://twitter.com/share" data-url="http://scottcheng.github.com/revolutionary-css3/" data-counturl="http://scottcheng.github.com/revolutionary-css3/" data-count="none" class="twitter-share-button">Tweet</a>
+        </div>
+        <div class="social-button-wrapper">
+                <iframe src="http://ghbtns.com/github-btn.html?user=scottcheng&amp;repo=revolutionary-css3&amp;type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53px" height="20px"></iframe>
+        </div>
+
+        </div>
+        <script src="lib/impress.js">
+
+
+<script>     
+var api = impress();     
+api.init();     
+$(document).ready(function(){         
+var interval = setInterval(function(){             api.next();         },5000);     }); </script>
